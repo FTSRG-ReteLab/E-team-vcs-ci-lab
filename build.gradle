@@ -4,8 +4,4 @@ subprojects {
   repositories {
     jcenter()
   }
-
-  plugins {
-    id 'java-library'
-  }
 }
