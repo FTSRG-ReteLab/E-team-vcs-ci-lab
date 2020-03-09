@@ -27,7 +27,7 @@ To compile and run tests also execute:
 The application represents a simple train controller system with the following three components.
 
 * Sensor: The sensor can detect the change in the speed limit of the track and can signal in such cases to the controller.
-* Controller: The controller is responsible for controlling the reference speed of the train. The reference speed is set by the user, but the speed limit must also be kept.
+* Controller: The controller is responsible for controlling the reference speed of the train. The reference speed is set by the user.
 * User: The user can manipulate the reference speed of the train using a joystick.
 
 ### Behavior
