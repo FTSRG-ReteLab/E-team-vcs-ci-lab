@@ -28,4 +28,18 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 	}
 
+	public class ChangeRefSpeed extends Thread {
+		@Override
+		public void run() {
+			while (true) {
+				controller.followSpeed();
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
 }
